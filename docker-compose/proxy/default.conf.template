@@ -8,7 +8,7 @@ server {
   server_name hydragon.hydrachain.org;
 
   location / {
-    proxy_pass localhost:80;
+    proxy_pass http://localhost:80;
   }
 
   listen 443 ssl; # managed by Certbot
