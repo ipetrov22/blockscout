@@ -7,11 +7,13 @@ services:
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     volumes:
-      - "../proxy:/etc/nginx/templates"
+      - '../proxy:/etc/nginx/templates'
     environment:
       BACK_PROXY_PASS: ${BACK_PROXY_PASS:-http://backend:4000}
       FRONT_PROXY_PASS: ${FRONT_PROXY_PASS:-http://frontend:3000}
+      RPC_PROXY_PASS: ${RPC_PROXY_PASS:-http://64.23.130.42:10002}
     ports:
       - 80:80
       - 8080:8080
       - 8081:8081
+      - 8545:8545
