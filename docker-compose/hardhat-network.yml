@@ -26,9 +26,9 @@ services:
     links:
       - db:database
     environment:
-        ETHEREUM_JSONRPC_VARIANT: 'geth'
-        ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
-        INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER: 'true'
+      ETHEREUM_JSONRPC_VARIANT: 'geth'
+      ETHEREUM_JSONRPC_WS_URL: ws://64.23.130.42:10002/
+      INDEXER_DISABLE_PENDING_TRANSACTIONS_FETCHER: 'true'
 
   visualizer:
     extends:
