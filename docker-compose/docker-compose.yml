@@ -40,7 +40,7 @@ services:
     environment:
         ETHEREUM_JSONRPC_HTTP_URL: http://64.23.130.42:10002/
         ETHEREUM_JSONRPC_TRACE_URL: http://64.23.130.42:10002/
-        ETHEREUM_JSONRPC_WS_URL: ws://64.23.130.42:10002/
+        ETHEREUM_JSONRPC_WS_URL: ws://64.23.130.42:10002/ws/
         CHAIN_ID: '8844'
 
   visualizer:
